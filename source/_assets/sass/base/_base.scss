@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@include responsiv-mobile($md) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-family;
+  background: #fefefe;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: map-get($fonts, xl);
+}
+
+.light {
+  font-weight: 300;
+}

@@ -1,0 +1,94 @@
+@for $i from 1 through 4 {
+  .mr-#{$i} {
+    margin-right: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 4 {
+  .ml-#{$i} {
+    margin-left: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 4 {
+  .mt-#{$i} {
+    margin-top: #{$i}rem;
+  }
+}
+
+@for $i from 1 through 4 {
+  .pr-#{$i} {
+    padding-right: #{$i}rem;
+  }
+}
+@for $i from 1 through 4 {
+  .pl-#{$i} {
+    padding-left: #{$i}rem;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-link,
+.navbar-brand {
+  text-decoration: none;
+  display: block;
+  padding: 1.8rem 1rem;
+  transition: all 0.3s ease;
+  color: #333;
+  font-size: map-get($fonts, medium);
+
+  &:hover {
+    background: #333;
+    color: #fff;
+  }
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 4rem;
+}
+
+@include responsiv-mobile($md) {
+  .nav-link:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.container {
+  padding-left: 10.5rem;
+  padding-right: 10.5rem;
+}
+
+@include responsiv-mobile($md) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(224, 217, 217, 0.6);
+}
+
+.selected {
+  background: #333;
+  color: #fff;
+}

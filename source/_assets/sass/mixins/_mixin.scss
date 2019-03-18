@@ -1,0 +1,5 @@
+@mixin responsiv-mobile($md) {
+  @media (max-width: #{$md}) {
+    @content;
+  }
+}
